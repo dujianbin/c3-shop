@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>产品范围选择</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="false" id="twcClient" name="twcClient" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<link href="../../css/flat/orange.css" rel="stylesheet">
+		<script src="../../js/jquery183.js"></script>
+		<script src="../../js/bootstrap/icheck.min.js"></script>
+		<link type="text/css" href="../../css/common.css" rel="Stylesheet" />
+	</head>
+
+	<style>
+		body {
+			background: #FFFFFF;
+		}
+		.l_menu {
+			height: 100%;
+			background: #F4F4F4;
+			position: absolute;
+			width: 100px;
+			padding-bottom: 80px;
+			box-sizing: border-box;
+			overflow: auto;
+			z-index: 999;
+		}
+		.l_menu li {
+			float: left;
+			height: 50px;
+			width: 100%;
+			overflow: hidden;
+			text-align: center;
+			line-height: 50px;
+			font-size: 14px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+		.l_menu li.l_Menu_seleted {
+			color: #FF7C92;
+			background: #fff;
+		}
+		.r_content {
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			padding-left: 100px;
+			box-sizing: border-box;
+			overflow: auto;
+			z-index: 990;
+		}
+		.r_content li {
+			height: 50px;
+			line-height: 50px;
+		}
+		.r_content li span {
+			position: absolute;
+			height: 50px;
+			width: 40px;
+			text-align: center;
+			z-index: 10000;
+			background: #FFF;
+		}
+		.r_content li p {
+			height: 50px;
+			float: left;
+			width: 100%;
+			padding-left: 40px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #e5e5e5;
+			font-size: 14px;
+		}
+		.r_content li p span {
+			position: relative;
+			height: 50px;
+			width: 40px;
+			text-align: left;
+			z-index: 10000;
+			background: none;
+			font-size: 14px;
+			padding-right: 6px;
+			box-sizing: border-box;
+		}
+		.r_content li p span.t {
+			width: 60%;
+			float: left;
+			overflow: hidden;
+		}
+		.r_content li p span.p {
+			width: 20%;
+			float: left;
+			overflow: hidden;
+		}
+		.r_content li p span.c {
+			width: 20%;
+			float: left;
+			overflow: hidden;
+		}
+	</style>
+
+	<body>
+
+		<div class="layout">
+			<div class="l_menu">
+				<li>进口食品</li>
+				<li class="l_Menu_seleted">地方特产</li>
+				<li>休闲食品</li>
+				<li>饮料冲调</li>
+				<li>茗茶</li>
+				<li>粮油调味</li>
+				<li>地方特产</li>
+				<li>休闲食品</li>
+				<li>饮料冲调</li>
+				<li>茗茶</li>
+				<li>粮油调味</li>
+				<li>地方特产</li>
+				<li>休闲食品</li>
+				<li>饮料冲调</li>
+				<li>茗茶</li>
+				<li>粮油调味</li>
+			</div>
+			<div class="r_content">
+				<li>
+					<label>
+						<span>
+							<input type="checkbox" id="selectAll">
+						</span>
+						<p> 全选</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" id="cp1" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" id="cp2" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" id="cp3" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox" class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+				<li>
+					<label>
+						<span>
+							 <input type="checkbox"  class="cp" name="cp">
+						</span>
+						<p><span class="t">东北特色杂粮家庭组合装1900g</span><span class="p">300</span><span class="c">30件</span>
+						</p>
+					</label>
+				</li>
+			</div>
+		</div>
+		<!--Layout-->
+		<script>
+			$(function() {
+				//点击'分类'菜单
+				$(".l_menu li").click(function() {
+					//设置分类菜单选中样式
+					$(".l_menu li").each(function(i) {
+						$(this).removeClass("l_Menu_seleted");
+					});
+					$(this).addClass("l_Menu_seleted")
+				});
+			});
+			$(document).ready(function() {
+				$('input').iCheck({
+					checkboxClass: 'icheckbox_flat-orange',
+					radioClass: 'iradio_flat-orange',
+					increaseArea: '20%' // optional
+				});
+				
+				
+				$('#selectAll').on('ifChecked', function(event) {
+					$('input').iCheck('check');
+				});
+				$('#selectAll').on('ifUnchecked', function(event) {
+					$('input').iCheck('uncheck');
+				});
+				$('#cp1').on('ifUnchecked', function(event) {
+					$('input').iCheck('uncheck');
+				});
+			});
+		</script>
+		<!--临时导航用：开发时，可以将其删去-->
+		<div class="temp_top">
+
+			<a href="08_cx_tj.html">
+				<div class="return"></div>
+			</a>
+			<div class="i">
+				产品范围选择
+			</div>
+			<a href="08_cx_tj.html">
+				<div class="right_op">
+					完成
+				</div>
+			</a>
+		</div>
+		<!--临时导航用：开发时，可以将其删去-->
+
+	</body>
+
+</html>

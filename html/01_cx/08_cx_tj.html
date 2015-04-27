@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>添加促销活动</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="false" id="twcClient" name="twcClient" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<script src="../../js/jquery183.js" type="text/javascript" charset="utf-8"></script>
+		<link type="text/css" href="../../css/common.css" rel="Stylesheet" />
+		<link type="text/css" href="../../css/cx.css" rel="Stylesheet" />
+	</head>
+
+	<style>
+		body {
+			background: #F4F4F4;
+		}
+	</style>
+
+	<body>
+		<div class="layout">
+			<div class="contentList no-border-top">
+				<dl>
+					<dt>促销名称</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="number" class="inputstyle" placeholder="点击填写" />
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>满</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="number" class="inputstyle" placeholder="点击填写" />
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>减</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="number" class="inputstyle" placeholder="点击填写" />
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>促销商品</dt>
+					<dd class="selectText" id="spfw">
+						选择促销产品范围
+						<button class="dropDown"></button>
+					</dd>
+				</dl>
+				<dl>
+					<dt>开始时间</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="date" class="inputstyle" placeholder="点击选择" />
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>结束时间</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="date" class="inputstyle" placeholder="点击选择" />
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="more_op">
+				<!--更多操作-->
+				<div class="shadeBox"></div>
+				<div class="opBox">
+					<li class="o_all" style="border-bottom: 1px solid #d5d5d5;">本店全部商品</li>
+					<a href="09_cx_cpfw.html">
+						<li class="o_some">本店部分商品</li>
+					</a>
+					<li class="o_cancel">取消</li>
+				</div>
+			</div>
+
+		</div>
+		<!--Layout-->
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//点击删除
+				$("#spfw").click(function() {
+					$(".shadeBox").fadeIn();
+					$(".opBox").slideDown();
+				});
+				$(".opBox li.o_all,.opBox li.o_cancel").click(function() {
+					$(".shadeBox").fadeOut();
+					$(".opBox").slideUp();
+				});
+			})
+		</script>
+		<!--临时导航用：开发时，可以将其删去-->
+		<div class="temp_top">
+
+			<a href="07_cx.html">
+				<div class="return"></div>
+			</a>
+			<div class="i">
+				添加促销活动
+			</div>
+
+			<a href="07_cx.html">
+				<div class="right_op">
+					完成
+				</div>
+			</a>
+		</div>
+
+		<!--临时导航用：开发时，可以将其删去-->
+
+	</body>
+
+</html>

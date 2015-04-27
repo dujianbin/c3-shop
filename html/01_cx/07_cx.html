@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>满就减</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="false" id="twcClient" name="twcClient" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<script src="../../js/jquery183.js" type="text/javascript" charset="utf-8"></script>
+		<link type="text/css" href="../../css/common.css" rel="Stylesheet" />
+		<link type="text/css" href="../../css/cx.css" rel="Stylesheet" />
+	</head>
+
+	<style>
+		body {
+			background: #F4F4F4;
+		}
+		.mjList {
+			width: 100%;
+			height: auto;
+			background: #FFF;
+			float: left;
+			border-top: 1px solid #d5d5d5;
+			border-bottom: 1px solid #d5d5d5;
+		}
+		.mjList li {
+			width: 100%;
+			height: 26px;
+			line-height: 26px;
+			box-sizing: border-box;
+			padding-left: 10px;
+			float: left;
+			text-align: left;
+			position: relative;
+			color: #000;
+		}
+		.delBox {
+			width: 96%;
+			margin: 10px auto;
+			border-top: 1px solid #d5d5d5;
+			padding: 10px 0 0 0;
+			position: relative;
+			height: 24px;
+		}
+		.delBox .t_split {
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			height: 16px;
+			width: 10px;
+			border-left: 1px solid #d5d5d5;
+		}
+		.delBox li {
+			width: 50%;
+			float: left;
+			height: 26px;
+		}
+		.delBox .del {
+			background: url(../../images/01_cx/icon_trash@2x.png) no-repeat center center;
+			background-size: 24px 24px;
+		}
+		.delBox .edit {
+			background: url(../../images/01_cx/icon_edit@2x.png) no-repeat center center;
+			background-size: 24px 24px;
+		}
+	</style>
+
+	<body>
+		<div class="layout">
+			<div class="mjList no-border-top">
+				<li class="font_16px">五一期间购物满100减10元</li>
+				<li class="font_14px">(满￥100.00减￥10.00)</li>
+				<li class="font_14px">2015-05-26 至 2015-06-02</li>
+				<div class="clear"></div>
+				<div class="delBox">
+					<a href="08_cx_tj.html">
+						<li class="edit"></li>
+					</a>
+					<div class="t_split"></div>
+					<li class="del"></li>
+				</div>
+			</div>
+			<div class="mjList margin_top">
+				<li class="font_16px">五一期间购物满100减10元</li>
+				<li class="font_14px">(满￥100.00减￥10.00)</li>
+				<li class="font_14px">2015-05-26 至 2015-06-02</li>
+				<div class="clear"></div>
+				<div class="delBox">
+					<a href="08_cx_tj.html">
+						<li class="edit"></li>
+					</a>
+					<div class="t_split"></div>
+					<li class="del"></li>
+				</div>
+			</div>
+			<!--更多操作-->
+			<div class="more_op">
+
+				<div class="shadeBox"></div>
+				<div class="opBox">
+					<li class="o_del">确认删除</li>
+					<li class="o_cancel">取消</li>
+				</div>
+
+			</div>
+		</div>
+		<!--Layout-->
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//点击删除
+				$(".del").click(function() {
+					$(".shadeBox").fadeIn();
+					$(".opBox").slideDown();
+				});
+				$(".opBox li.o_del,.opBox li.o_cancel").click(function() {
+					$(".shadeBox").fadeOut();
+					$(".opBox").slideUp();
+				});
+			})
+		</script>
+
+		<!--临时导航用：开发时，可以将其删去-->
+		<div class="temp_top">
+
+			<a href="01_cxgl.html">
+				<div class="return"></div>
+			</a>
+			<div class="i">
+				满就减
+			</div>
+
+			<a href="08_cx_tj.html">
+				<div class="right_op">
+					添加
+				</div>
+			</a>
+		</div>
+
+		<!--临时导航用：开发时，可以将其删去-->
+
+	</body>
+
+</html>

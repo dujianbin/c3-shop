@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>折扣详情</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="false" id="twcClient" name="twcClient" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<script src="../../js/jquery183.js" type="text/javascript" charset="utf-8"></script>
+		<link type="text/css" href="../../css/common.css" rel="Stylesheet" />
+		<link type="text/css" href="../../css/cx.css" rel="Stylesheet" />
+	</head>
+
+	<style>
+		body {
+			background: #F4F4F4;
+		}
+		.sf {
+			position: absolute;
+			right: 4px;
+			top: 14px;
+			width: 40px;
+			height: 32px;
+		}
+		.sf_off {
+			background: url(../../images/comm/switch_off.png) no-repeat;
+			background-size: 40px;
+		}
+		.sf_on {
+			background: url(../../images/comm/switch_on.png) no-repeat;
+			background-size: 40px;
+		}
+		.xgsl {
+			display: none;
+		}
+		.splitBox {
+			display: none;
+			background: #E9E9E9;
+		}
+	</style>
+
+	<body>
+		<div class="layout">
+			<div class="contentList no-border-top">
+				<dl>
+					<img class="cx_img" src="../../images/01_cx/pic_006.png" />
+					<div class="textBox">
+						<div class="t3_1">丹麦进口 Kjeldsens 蓝罐 曲奇 礼盒 908g 盒装</div>
+						<div class="t3_2">$30</div>
+					</div>
+				</dl>
+			</div>
+			<div class="contentList margin_top">
+				<dl>
+					<dt>折后价格</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="number" class="inputstyle" placeholder="点击填写" />
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>开始时间</dt>
+					<dd>2015-04-05 16:00</dd>
+				</dl>
+				<dl>
+					<dt>开始时间</dt>
+					<dd>2015-05-05 16:00</dd>
+				</dl>
+				<dl>
+					<dt>是否限购</dt>
+					<dd>
+						<span class="sf sf_off"></span>
+					</dd>
+				</dl>
+				<dl class="xgsl">
+					<dt>限购数量</dt>
+					<dd>
+						<div class="inputBox">
+							<input type="number" class="inputstyle" placeholder="点击填写" value="50" />
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="splitBox" style="font-size: 10px;">注：限时折扣的商品，拍下后30分钟内未付款将自动关闭订单</div>
+		</div>
+		<!--Layout-->
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".sf_off").click(function() {
+					$(".sf_off").toggleClass("sf_on");
+					$(".xgsl").show();
+					$(".splitBox").show();
+				});
+			})
+		</script>
+		<!--临时导航用：开发时，可以将其删去-->
+		<div class="temp_top">
+
+			<a href="01_cxgl.html">
+				<div class="return"></div>
+			</a>
+			<div class="i">
+				限时折扣
+			</div>
+
+			<a href="05_xszk.html">
+				<div class="right_op">
+					完成
+				</div>
+			</a>
+		</div>
+
+		<!--临时导航用：开发时，可以将其删去-->
+
+	</body>
+
+</html>

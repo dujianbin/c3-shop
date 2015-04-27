@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Hello world</title>
+		<script type="text/javascript">
+			 // 扩展API是否准备好，如果没有则监听“plusready"事件
+			if (window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener("plusready", plusReady, false);
+			}
+			 // 扩展API准备完成后要执行的操作
+			function plusReady() {
+				var ws = plus.webview.currentWebview(); //pw回车可输出plus.webview
+				// ... code
+			}
+
+			function openWebview() {
+				var url = 'html/01_cx/01_cxgl.html';
+				plus.webview.create(url).show();
+			}
+		</script>
+	</head>
+	<style>
+		.btn {
+			height: 200px; 
+			width: 50%;
+			background: #D9534F;
+			color: #fff;
+			margin: 50px auto;
+			line-height: 200px;
+			text-align: center;
+			border-radius: 4px;
+			font-size: 20px;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			margin-left: -25%;
+		}
+		.btn:active {background:#D2322D}
+	</style>
+
+	<body>
+		<div class="btn" onclick="openWebview()">C3-Shop</div>
+	</body>
+
+</html>

@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>限时折扣</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="false" id="twcClient" name="twcClient" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<script src="../../js/jquery183.js" type="text/javascript" charset="utf-8"></script>
+		<link type="text/css" href="../../css/common.css" rel="Stylesheet" />
+		<link type="text/css" href="../../css/cx.css" rel="Stylesheet" />
+	</head>
+
+	<style>
+		body {
+			background: #F4F4F4;
+		}
+		.delBox {
+			width: 96%;
+			margin: 10px auto;
+			border-top: 1px solid #d5d5d5;
+			padding: 10px 0 10px 0;
+			position: relative;
+		}
+		.delBox .t_split {
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			height: 16px;
+			width: 10px;
+			border-left: 1px solid #d5d5d5;
+		}
+		.delBox li {
+			width: 50%;
+			float: left;
+			height: 26px;
+		}
+		.delBox .del {
+			background: url(../../images/01_cx/icon_trash@2x.png) no-repeat center center;
+			background-size: 24px 24px;
+		}
+		.delBox .publish {
+			background: url(../../images/01_cx/icon_share@2x.png) no-repeat center center;
+			background-size: 24px 24px;
+		}
+		/*折扣*/
+		
+		.n_price {
+			float: left;
+			height: 16px;
+			font-size: 14px;
+			text-align: left;
+			line-height: 16px;
+		}
+		.o_price {
+			float: left;
+			margin-left: 10px;
+			height: 16px;
+			color: #999;
+			text-decoration: line-through;
+			vertical-align: middle;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		.discount {
+			float: left;
+			margin-left: 10px;
+			height: 16px;
+			width: 44px;
+			background: url(../../images/01_cx/icon_lable@2x.png) no-repeat;
+			color: #fff;
+			font-size: 10px;
+			background-size: 38px 16px;
+			display: block;
+			text-align: center;
+			line-height: 16px;
+		}
+	</style>
+
+	<body>
+		<div class="layout">
+			<div class="contentList no-border-top">
+				<dl>
+					<a href="04_xszk_xq.html">
+						<img class="cx_img" src="../../images/01_cx/pic_006.png" />
+						<div class="textBox">
+							<div class="t3_1">丹麦进口 Kjeldsens 蓝罐 曲奇 礼盒 908g 盒装</div>
+							<div class="t3_2" "><span class="n_price ">￥20</span> <span class="o_price ">70</span><span class="discount ">5.0折</span></div>
+							<div class="t3_3 ">2015-04-05 16:00 至 2015-05-05 16:00</div>
+							
+						</div>
+
+						<div class="t_more " style="top: 40px; "></div>
+					</a>
+					<div class="delBox ">
+						<div class="t_split "></div>
+						<li class="del "></li>
+						<li class="publish "></li>
+					</div>
+
+				</dl>
+			</div>
+			<div class="contentList margin_top ">
+				<dl>
+					<a href="04_xszk_xq.html ">
+						<img class="cx_img " src="../../images/01_cx/pic_006.png " />
+						<div class="textBox ">
+							<div class="t3_1 ">丹麦进口 Kjeldsens 蓝罐 曲奇 礼盒 908g 盒装</div>
+							<div class="t3_2 ">$30</div>
+						</div>
+						<div class="t_more " style="top: 40px; "></div>
+					</a>
+					<div class="delBox ">
+						<div class="t_split "></div>
+						<li class="del "></li>
+						<li class="publish "></li>
+					</div>
+				</dl>
+			</div>
+			<div class="more_op ">
+				<!--更多操作-->
+				<div class="shadeBox "></div>
+				<div class="opBox ">
+					<li class="o_del ">确认删除</li>
+					<li class="o_cancel ">取消</li>
+				</div>
+				<div class="publishBox ">
+					<li style="text-align: left; ">通过社交软件分享
+						<br />分享才能获得更多客流</li>
+					<li style="height: auto; ">
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_manjian@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_zhekou@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_manjian@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_zhekou@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_manjian@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_zhekou@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_manjian@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_zhekou@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_manjian@2x.png " />微信</p>
+						<p>
+							<img class="p_img " src="../../images/01_cx/icon_zhekou@2x.png " />微信</p>
+					</li>
+					<li class="p_cancel ">取消</li>
+				</div>
+			</div>
+		</div>
+		<!--Layout-->
+
+		<script type="text/javascript ">
+			$(document).ready(function() {
+				//点击删除
+				$(".del ").click(function() {
+					$(".shadeBox ").fadeIn();
+					$(".opBox ").slideDown();
+				});
+				$(".opBox li.o_del,.opBox li.o_cancel ").click(function() {
+					$(".shadeBox ").fadeOut();
+					$(".opBox ").slideUp();
+				});
+				//点击发布
+				$(".publish ").click(function() {
+					$(".shadeBox ").fadeIn();
+					$(".publishBox ").slideDown();
+				});
+				$(".publishBox li.p_cancel ").click(function() {
+					$(".shadeBox ").fadeOut();
+					$(".publishBox ").slideUp();
+				});
+			})
+		</script>
+
+		<!--临时导航用：开发时，可以将其删去-->
+		<div class="temp_top ">
+
+			<a href="01_cxgl.html ">
+				<div class="return "></div>
+			</a>
+			<div class="i ">
+				限时折扣
+			</div>
+
+			<a href="02_zksp.html ">
+				<div class="right_op ">
+					添加
+				</div>
+			</a>
+		</div>
+
+		<!--临时导航用：开发时，可以将其删去-->
+
+	</body>
+
+</html>
